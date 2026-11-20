@@ -1,10 +1,20 @@
 {
-  "name": "house-dodge",
+  "name": "brainrot-heist",
   "tree": {
     "$className": "DataModel",
     "Players": {
       "$properties": {
-        "CharacterAutoLoads": false
+        "CharacterAutoLoads": true
+      }
+    },
+    "Lighting": {
+      "$properties": {
+        "Brightness": 2,
+        "GlobalShadows": true,
+        "Ambient": [0.32, 0.34, 0.4],
+        "OutdoorAmbient": [0.5, 0.52, 0.58],
+        "ClockTime": 14.5,
+        "Technology": "ShadowMap"
       }
     },
     "ServerScriptService": {
@@ -21,47 +31,476 @@
     },
     "Workspace": {
       "$properties": {
-        "FilteringEnabled": true
+        "Gravity": 196.2
       },
       "Baseplate": {
         "$className": "Part",
         "$properties": {
           "Anchored": true,
-          "Color": [
-            0.38823,
-            0.37254,
-            0.38823
-          ],
           "Locked": true,
-          "Position": [
-            0,
-            -10,
-            0
-          ],
-          "Size": [
-            512,
-            20,
-            512
-          ]
+          "CanCollide": true,
+          "Material": "Grass",
+          "Color": [0.29, 0.62, 0.24],
+          "Size": [512, 20, 512],
+          "Position": [0, -10, 0]
         }
-      }
-    },
-    "Lighting": {
-      "$properties": {
-        "Ambient": [
-          0,
-          0,
-          0
-        ],
-        "Brightness": 2,
-        "GlobalShadows": true,
-        "Outlines": false,
-        "Technology": "Voxel"
-      }
-    },
-    "SoundService": {
-      "$properties": {
-        "RespectFilteringEnabled": true
+      },
+      "SpawnLocation": {
+        "$className": "SpawnLocation",
+        "$properties": {
+          "Anchored": true,
+          "Locked": true,
+          "Neutral": true,
+          "Duration": 0,
+          "Material": "SmoothPlastic",
+          "Color": [0.85, 0.85, 0.88],
+          "Size": [12, 1, 12],
+          "Position": [0, 0.5, 0]
+        }
+      },
+      "PlotNorth": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Locked": true,
+          "Material": "SmoothPlastic",
+          "Color": [0.25, 0.45, 0.85],
+          "Size": [34, 1, 34],
+          "Position": [0, 0.5, -140]
+        }
+      },
+      "PlotSouth": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Locked": true,
+          "Material": "SmoothPlastic",
+          "Color": [0.85, 0.42, 0.3],
+          "Size": [34, 1, 34],
+          "Position": [0, 0.5, 140]
+        }
+      },
+      "PlotWest": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Locked": true,
+          "Material": "SmoothPlastic",
+          "Color": [0.75, 0.68, 0.25],
+          "Size": [34, 1, 34],
+          "Position": [-140, 0.5, 0]
+        }
+      },
+      "PlotEast": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Locked": true,
+          "Material": "SmoothPlastic",
+          "Color": [0.55, 0.35, 0.75],
+          "Size": [34, 1, 34],
+          "Position": [140, 0.5, 0]
+        }
+      },
+      "Conveyor1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Metal",
+          "Color": [0.42, 0.43, 0.44],
+          "Size": [6, 1, 10],
+          "Position": [-33, 1.5, -30]
+        }
+      },
+      "Conveyor2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Metal",
+          "Color": [0.42, 0.43, 0.44],
+          "Size": [6, 1, 10],
+          "Position": [-27, 1.5, -30]
+        }
+      },
+      "Conveyor3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Metal",
+          "Color": [0.42, 0.43, 0.44],
+          "Size": [6, 1, 10],
+          "Position": [-21, 1.5, -30]
+        }
+      },
+      "Conveyor4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Metal",
+          "Color": [0.42, 0.43, 0.44],
+          "Size": [6, 1, 10],
+          "Position": [-15, 1.5, -30]
+        }
+      },
+      "Conveyor5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Metal",
+          "Color": [0.42, 0.43, 0.44],
+          "Size": [6, 1, 10],
+          "Position": [-9, 1.5, -30]
+        }
+      },
+      "Conveyor6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Metal",
+          "Color": [0.42, 0.43, 0.44],
+          "Size": [6, 1, 10],
+          "Position": [-3, 1.5, -30]
+        }
+      },
+      "Conveyor7": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Metal",
+          "Color": [0.42, 0.43, 0.44],
+          "Size": [6, 1, 10],
+          "Position": [3, 1.5, -30]
+        }
+      },
+      "Conveyor8": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Metal",
+          "Color": [0.42, 0.43, 0.44],
+          "Size": [6, 1, 10],
+          "Position": [9, 1.5, -30]
+        }
+      },
+      "Conveyor9": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Metal",
+          "Color": [0.42, 0.43, 0.44],
+          "Size": [6, 1, 10],
+          "Position": [15, 1.5, -30]
+        }
+      },
+      "Conveyor10": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Metal",
+          "Color": [0.42, 0.43, 0.44],
+          "Size": [6, 1, 10],
+          "Position": [21, 1.5, -30]
+        }
+      },
+      "Conveyor11": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Metal",
+          "Color": [0.42, 0.43, 0.44],
+          "Size": [6, 1, 10],
+          "Position": [27, 1.5, -30]
+        }
+      },
+      "Conveyor12": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Metal",
+          "Color": [0.42, 0.43, 0.44],
+          "Size": [6, 1, 10],
+          "Position": [33, 1.5, -30]
+        }
+      },
+      "ShopBody": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Brick",
+          "Color": [0.45, 0.3, 0.22],
+          "Size": [20, 14, 20],
+          "Position": [-45, 7, 60]
+        }
+      },
+      "ShopRoof": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Slate",
+          "Color": [0.3, 0.18, 0.14],
+          "Size": [24, 2, 24],
+          "Position": [-45, 15, 60]
+        }
+      },
+      "WarehouseBody": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Brick",
+          "Color": [0.42, 0.44, 0.48],
+          "Size": [24, 18, 20],
+          "Position": [45, 9, 60]
+        }
+      },
+      "WarehouseRoof": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Metal",
+          "Color": [0.28, 0.3, 0.34],
+          "Size": [28, 2, 24],
+          "Position": [45, 19, 60]
+        }
+      },
+      "LabBody": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Concrete",
+          "Color": [0.62, 0.64, 0.68],
+          "Size": [20, 16, 20],
+          "Position": [-45, 8, -60]
+        }
+      },
+      "LabRoof": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Metal",
+          "Color": [0.35, 0.55, 0.68],
+          "Size": [24, 2, 24],
+          "Position": [-45, 17, -60]
+        }
+      },
+      "GarageBody": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Concrete",
+          "Color": [0.55, 0.5, 0.45],
+          "Size": [22, 12, 20],
+          "Position": [45, 6, -60]
+        }
+      },
+      "GarageRoof": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Slate",
+          "Color": [0.28, 0.26, 0.24],
+          "Size": [26, 2, 24],
+          "Position": [45, 13, -60]
+        }
+      },
+      "TreeTrunk1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Wood",
+          "Color": [0.32, 0.22, 0.14],
+          "Size": [2, 10, 2],
+          "Position": [-110, 5, -70]
+        }
+      },
+      "TreeLeaves1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Grass",
+          "Color": [0.2, 0.5, 0.22],
+          "Size": [9, 9, 9],
+          "Position": [-110, 13, -70]
+        }
+      },
+      "TreeTrunk2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Wood",
+          "Color": [0.32, 0.22, 0.14],
+          "Size": [2, 10, 2],
+          "Position": [-110, 5, -40]
+        }
+      },
+      "TreeLeaves2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Grass",
+          "Color": [0.2, 0.5, 0.22],
+          "Size": [9, 9, 9],
+          "Position": [-110, 13, -40]
+        }
+      },
+      "TreeTrunk3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Wood",
+          "Color": [0.32, 0.22, 0.14],
+          "Size": [2, 10, 2],
+          "Position": [-110, 5, 40]
+        }
+      },
+      "TreeLeaves3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Grass",
+          "Color": [0.2, 0.5, 0.22],
+          "Size": [9, 9, 9],
+          "Position": [-110, 13, 40]
+        }
+      },
+      "TreeTrunk4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Wood",
+          "Color": [0.32, 0.22, 0.14],
+          "Size": [2, 10, 2],
+          "Position": [-110, 5, 70]
+        }
+      },
+      "TreeLeaves4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Grass",
+          "Color": [0.2, 0.5, 0.22],
+          "Size": [9, 9, 9],
+          "Position": [-110, 13, 70]
+        }
+      },
+      "TreeTrunk5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Wood",
+          "Color": [0.32, 0.22, 0.14],
+          "Size": [2, 10, 2],
+          "Position": [110, 5, -70]
+        }
+      },
+      "TreeLeaves5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Grass",
+          "Color": [0.2, 0.5, 0.22],
+          "Size": [9, 9, 9],
+          "Position": [110, 13, -70]
+        }
+      },
+      "TreeTrunk6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Wood",
+          "Color": [0.32, 0.22, 0.14],
+          "Size": [2, 10, 2],
+          "Position": [110, 5, -40]
+        }
+      },
+      "TreeLeaves6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Grass",
+          "Color": [0.2, 0.5, 0.22],
+          "Size": [9, 9, 9],
+          "Position": [110, 13, -40]
+        }
+      },
+      "TreeTrunk7": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Wood",
+          "Color": [0.32, 0.22, 0.14],
+          "Size": [2, 10, 2],
+          "Position": [110, 5, 40]
+        }
+      },
+      "TreeLeaves7": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Grass",
+          "Color": [0.2, 0.5, 0.22],
+          "Size": [9, 9, 9],
+          "Position": [110, 13, 40]
+        }
+      },
+      "TreeTrunk8": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Wood",
+          "Color": [0.32, 0.22, 0.14],
+          "Size": [2, 10, 2],
+          "Position": [110, 5, 70]
+        }
+      },
+      "TreeLeaves8": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Grass",
+          "Color": [0.2, 0.5, 0.22],
+          "Size": [9, 9, 9],
+          "Position": [110, 13, 70]
+        }
+      },
+      "MarkerA": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Neon",
+          "Color": [0.95, 0.85, 0.4],
+          "Size": [1, 14, 1],
+          "Position": [-70, 7, 20]
+        }
+      },
+      "MarkerB": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Neon",
+          "Color": [0.95, 0.85, 0.4],
+          "Size": [1, 14, 1],
+          "Position": [70, 7, 20]
+        }
+      },
+      "MarkerC": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Neon",
+          "Color": [0.95, 0.85, 0.4],
+          "Size": [1, 14, 1],
+          "Position": [-70, 7, -20]
+        }
+      },
+      "MarkerD": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Material": "Neon",
+          "Color": [0.95, 0.85, 0.4],
+          "Size": [1, 14, 1],
+          "Position": [70, 7, -20]
+        }
       }
     }
   }
