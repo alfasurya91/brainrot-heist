@@ -2,26 +2,30 @@
   "name": "brainrot-heist",
   "tree": {
     "$className": "DataModel",
+
     "Players": {
       "$properties": {
         "CharacterAutoLoads": true
       }
     },
+
     "Lighting": {
       "$properties": {
-        "Brightness": 2,
-        "GlobalShadows": true,
         "Ambient": [0.32, 0.34, 0.4],
         "OutdoorAmbient": [0.5, 0.52, 0.58],
+        "Brightness": 2,
         "ClockTime": 14.5,
+        "GlobalShadows": true,
         "Technology": "ShadowMap"
       }
     },
+
     "ServerScriptService": {
       "Server": {
         "$path": "src/server"
       }
     },
+
     "StarterPlayer": {
       "StarterPlayerScripts": {
         "Client": {
@@ -29,10 +33,12 @@
         }
       }
     },
+
     "Workspace": {
       "$properties": {
         "Gravity": 196.2
       },
+
       "Baseplate": {
         "$className": "Part",
         "$properties": {
@@ -45,6 +51,7 @@
           "Position": [0, -10, 0]
         }
       },
+
       "SpawnLocation": {
         "$className": "SpawnLocation",
         "$properties": {
@@ -58,6 +65,7 @@
           "Position": [0, 0.5, 0]
         }
       },
+
       "PlotNorth": {
         "$className": "Part",
         "$properties": {
@@ -69,6 +77,7 @@
           "Position": [0, 0.5, -140]
         }
       },
+
       "PlotSouth": {
         "$className": "Part",
         "$properties": {
@@ -80,6 +89,7 @@
           "Position": [0, 0.5, 140]
         }
       },
+
       "PlotWest": {
         "$className": "Part",
         "$properties": {
@@ -91,6 +101,7 @@
           "Position": [-140, 0.5, 0]
         }
       },
+
       "PlotEast": {
         "$className": "Part",
         "$properties": {
@@ -102,6 +113,7 @@
           "Position": [140, 0.5, 0]
         }
       },
+
       "Conveyor1": {
         "$className": "Part",
         "$properties": {
@@ -112,6 +124,7 @@
           "Position": [-33, 1.5, -30]
         }
       },
+
       "Conveyor2": {
         "$className": "Part",
         "$properties": {
@@ -122,6 +135,7 @@
           "Position": [-27, 1.5, -30]
         }
       },
+
       "Conveyor3": {
         "$className": "Part",
         "$properties": {
@@ -132,6 +146,7 @@
           "Position": [-21, 1.5, -30]
         }
       },
+
       "Conveyor4": {
         "$className": "Part",
         "$properties": {
@@ -142,6 +157,7 @@
           "Position": [-15, 1.5, -30]
         }
       },
+
       "Conveyor5": {
         "$className": "Part",
         "$properties": {
@@ -152,6 +168,7 @@
           "Position": [-9, 1.5, -30]
         }
       },
+
       "Conveyor6": {
         "$className": "Part",
         "$properties": {
@@ -162,6 +179,7 @@
           "Position": [-3, 1.5, -30]
         }
       },
+
       "Conveyor7": {
         "$className": "Part",
         "$properties": {
@@ -172,6 +190,7 @@
           "Position": [3, 1.5, -30]
         }
       },
+
       "Conveyor8": {
         "$className": "Part",
         "$properties": {
@@ -182,6 +201,7 @@
           "Position": [9, 1.5, -30]
         }
       },
+
       "Conveyor9": {
         "$className": "Part",
         "$properties": {
@@ -192,6 +212,7 @@
           "Position": [15, 1.5, -30]
         }
       },
+
       "Conveyor10": {
         "$className": "Part",
         "$properties": {
@@ -202,6 +223,7 @@
           "Position": [21, 1.5, -30]
         }
       },
+
       "Conveyor11": {
         "$className": "Part",
         "$properties": {
@@ -212,6 +234,7 @@
           "Position": [27, 1.5, -30]
         }
       },
+
       "Conveyor12": {
         "$className": "Part",
         "$properties": {
@@ -222,6 +245,7 @@
           "Position": [33, 1.5, -30]
         }
       },
+
       "ShopBody": {
         "$className": "Part",
         "$properties": {
@@ -232,6 +256,7 @@
           "Position": [-45, 7, 60]
         }
       },
+
       "ShopRoof": {
         "$className": "Part",
         "$properties": {
@@ -242,6 +267,7 @@
           "Position": [-45, 15, 60]
         }
       },
+
       "WarehouseBody": {
         "$className": "Part",
         "$properties": {
@@ -252,6 +278,7 @@
           "Position": [45, 9, 60]
         }
       },
+
       "WarehouseRoof": {
         "$className": "Part",
         "$properties": {
@@ -262,6 +289,7 @@
           "Position": [45, 19, 60]
         }
       },
+
       "LabBody": {
         "$className": "Part",
         "$properties": {
@@ -272,6 +300,7 @@
           "Position": [-45, 8, -60]
         }
       },
+
       "LabRoof": {
         "$className": "Part",
         "$properties": {
@@ -282,6 +311,7 @@
           "Position": [-45, 17, -60]
         }
       },
+
       "GarageBody": {
         "$className": "Part",
         "$properties": {
@@ -292,6 +322,7 @@
           "Position": [45, 6, -60]
         }
       },
+
       "GarageRoof": {
         "$className": "Part",
         "$properties": {
@@ -302,6 +333,7 @@
           "Position": [45, 13, -60]
         }
       },
+
       "TreeTrunk1": {
         "$className": "Part",
         "$properties": {
@@ -312,6 +344,7 @@
           "Position": [-110, 5, -70]
         }
       },
+
       "TreeLeaves1": {
         "$className": "Part",
         "$properties": {
@@ -322,6 +355,7 @@
           "Position": [-110, 13, -70]
         }
       },
+
       "TreeTrunk2": {
         "$className": "Part",
         "$properties": {
@@ -332,6 +366,7 @@
           "Position": [-110, 5, -40]
         }
       },
+
       "TreeLeaves2": {
         "$className": "Part",
         "$properties": {
@@ -342,6 +377,7 @@
           "Position": [-110, 13, -40]
         }
       },
+
       "TreeTrunk3": {
         "$className": "Part",
         "$properties": {
@@ -352,6 +388,7 @@
           "Position": [-110, 5, 40]
         }
       },
+
       "TreeLeaves3": {
         "$className": "Part",
         "$properties": {
@@ -362,6 +399,7 @@
           "Position": [-110, 13, 40]
         }
       },
+
       "TreeTrunk4": {
         "$className": "Part",
         "$properties": {
@@ -372,6 +410,7 @@
           "Position": [-110, 5, 70]
         }
       },
+
       "TreeLeaves4": {
         "$className": "Part",
         "$properties": {
@@ -382,6 +421,7 @@
           "Position": [-110, 13, 70]
         }
       },
+
       "TreeTrunk5": {
         "$className": "Part",
         "$properties": {
@@ -392,6 +432,7 @@
           "Position": [110, 5, -70]
         }
       },
+
       "TreeLeaves5": {
         "$className": "Part",
         "$properties": {
@@ -402,6 +443,7 @@
           "Position": [110, 13, -70]
         }
       },
+
       "TreeTrunk6": {
         "$className": "Part",
         "$properties": {
@@ -412,6 +454,7 @@
           "Position": [110, 5, -40]
         }
       },
+
       "TreeLeaves6": {
         "$className": "Part",
         "$properties": {
@@ -422,6 +465,7 @@
           "Position": [110, 13, -40]
         }
       },
+
       "TreeTrunk7": {
         "$className": "Part",
         "$properties": {
@@ -432,6 +476,7 @@
           "Position": [110, 5, 40]
         }
       },
+
       "TreeLeaves7": {
         "$className": "Part",
         "$properties": {
@@ -442,6 +487,7 @@
           "Position": [110, 13, 40]
         }
       },
+
       "TreeTrunk8": {
         "$className": "Part",
         "$properties": {
@@ -452,6 +498,7 @@
           "Position": [110, 5, 70]
         }
       },
+
       "TreeLeaves8": {
         "$className": "Part",
         "$properties": {
@@ -462,6 +509,7 @@
           "Position": [110, 13, 70]
         }
       },
+
       "MarkerA": {
         "$className": "Part",
         "$properties": {
@@ -472,6 +520,7 @@
           "Position": [-70, 7, 20]
         }
       },
+
       "MarkerB": {
         "$className": "Part",
         "$properties": {
@@ -482,6 +531,7 @@
           "Position": [70, 7, 20]
         }
       },
+
       "MarkerC": {
         "$className": "Part",
         "$properties": {
@@ -492,6 +542,7 @@
           "Position": [-70, 7, -20]
         }
       },
+
       "MarkerD": {
         "$className": "Part",
         "$properties": {
